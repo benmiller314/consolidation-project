@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kylie - 100</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -50 points.\nThe correct answer was: 20.");
+        window.close();
+        score = score - 50;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +100 points.");
+        window.close();
+        score = score + 100;
+      }
+    </script>
+  </head>
+  <body>
+    <p>How old was Kylie when she gave birth to her daughter Stormi?</p>
+    <button onclick = "incorrect()">18</button>
+    <button onclick = "correct()">20</button>
+    <button onclick = "incorrect()">21</button>
+    <button onclick = "incorrect()">23</button>
+  </body>
+</html>

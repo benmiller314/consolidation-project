@@ -58,5 +58,6 @@ button{
   margin-left: 8%;
   font-size: 30px;
   padding: 15px 30px;
+  width: 84%;
   display: inline-block;
 }

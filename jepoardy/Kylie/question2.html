@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kylie - 200</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -100 points.\nThe correct answer was: $1 billion.");
+        window.close();
+        score = score - 100;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +200 points.");
+        window.close();
+        score = score + 200;
+      }
+    </script>
+  </head>
+  <body>
+    <p>What is Kylie's net worth as of 2020?</p>
+    <button onclick = "incorrect()">$982 million</button>
+    <button onclick = "incorrect()">$500 million</button>
+    <button onclick = "incorrect()">$750 million</button>
+    <button onclick = "correct()">$1 billion</button>
+  </body>
+</html>

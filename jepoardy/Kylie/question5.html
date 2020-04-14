@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kylie - 500</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -250 points.\nThe correct answer was: garlic powder, butter, egg.");
+        window.close();
+        score = score - 250;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +500 points.");
+        window.close();
+        score = score + 500;
+      }
+    </script>
+  </head>
+  <body>
+    <p>What does Kylie put in her ramen noodles?</p>
+    <button onclick = "incorrect()">egg, butter, hot sauce</button>
+    <button onclick = "incorrect()">egg, garlic powder, curry sauce</button>
+    <button onclick = "incorrect()">margarine, minced garlic, egg whites</button>
+    <button onclick = "correct()">garlic powder, butter, egg</button>
+  </body>
+</html>

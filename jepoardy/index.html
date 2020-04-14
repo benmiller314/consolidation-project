@@ -43,7 +43,7 @@
           }else{
             window.open('Khloe/question5.html','popup','width=600, height=600');
           }
-        }else if(sister = 4){
+        }else if(sister == 4){
           if(question == 1){
             window.open('Kendall/question1.html','popup','width=600, height=600');
           }else if(question == 2){
@@ -54,6 +54,18 @@
             window.open('Kendall/question4.html','popup','width=600, height=600');
           }else{
             window.open('Kendall/question5.html','popup','width=600, height=600');
+          }
+        }else if(sister == 5){
+          if(question == 1){
+            window.open('Kylie/question1.html','popup','width=600, height=600');
+          }else if(question == 2){
+            window.open('Kylie/question2.html','popup','width=600, height=600');
+          }else if(question == 3){
+            window.open('Kylie/question3.html','popup','width=600, height=600');
+          }else if(question == 4){
+            window.open('Kylie/question4.html','popup','width=600, height=600');
+          }else{
+            window.open('Kylie/question5.html','popup','width=600, height=600');
           }
         }
       }
@@ -97,11 +109,11 @@
       </section>
       <section class = "kylie">
         <div class = "name">Kylie</div>
-        <div class = "question"><button>100</button></div>
-        <div class = "question"><button>200</button></div>
-        <div class = "question"><button>300</button></div>
-        <div class = "question"><button>400</button></div>
-        <div class = "question"><button>500</button></div>
+        <div class = "question"><button ID = "k51" onclick="askquestion(5, 1)">100</button></div>
+        <div class = "question"><button ID = "k52" onclick="askquestion(5, 2)">200</button></div>
+        <div class = "question"><button ID = "k53" onclick="askquestion(5, 3)">300</button></div>
+        <div class = "question"><button ID = "k54" onclick="askquestion(5, 4)">400</button></div>
+        <div class = "question"><button ID = "k55" onclick="askquestion(5, 5)">500</button></div>
       </section>
   </body>
 </html>

@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kylie - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: Forbes.");
+        window.close();
+        score = score - 200;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+        score = score + 400;
+      }
+    </script>
+  </head>
+  <body>
+    <p>In 2017, Kylie appeared on the cover of what magazine with the controversial statement that she was on track to be the youngest "self-made" billionaire in history?</p>
+    <button onclick = "incorrect()">Cosmopolitan</button>
+    <button onclick = "incorrect()">Vogue</button>
+    <button onclick = "correct()">Forbes</button>
+    <button onclick = "incorrect()">Business Insider</button>
+  </body>
+</html>
