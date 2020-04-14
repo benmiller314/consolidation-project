@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kim - 100</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -50 points.\nThe correct answer was: Kanye West.");
+        window.close();
+        score = score - 50;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +100 points.");
+        window.close();
+        score = score + 100;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Who is Kim's husband (2020)?</p>
+    <button onclick = "incorrect()">Kris Humphries</button>
+    <button onclick = "incorrect()">Travis Scott</button>
+    <button onclick = "incorrect()">Reggie Bush</button>
+    <button onclick = "correct()">Kanye West</button>
+  </body>
+</html>

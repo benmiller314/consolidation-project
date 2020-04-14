@@ -1,0 +1,27 @@
+<html lang = 'en'>
+  <head>
+    <title>Kourtney - 200</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -100 points.\nThe correct answer was: 1979.");
+        window.close();
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +200 points.");
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <p>What year was Kourtney born in?</p>
+    <button onclick = "correct()">1979</button>
+    <button onclick = "incorrect()">1983</button>
+    <button onclick = "incorrect()">1975</button>
+    <button onclick = "incorrect()">1988</button>
+  </body>
+</html>

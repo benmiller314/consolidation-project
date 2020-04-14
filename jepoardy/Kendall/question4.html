@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kendall - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: 1.");
+        window.close();
+        score = score - 200;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+        score = score + 400;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Kendall Jenner had what rank on the list of highest paid models in 2018?</p>
+    <button onclick = "correct()">1</button>
+    <button onclick = "incorrect()">2</button>
+    <button onclick = "incorrect()">3</button>
+    <button onclick = "incorrect()">5</button>
+  </body>
+</html>

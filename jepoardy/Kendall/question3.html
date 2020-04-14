@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kendall - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: Pepsi.");
+        window.close();
+        score = score - 200;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+        score = score + 400;
+      }
+    </script>
+  </head>
+  <body>
+    <p>In a highly controversial ad, Kendall broke tensions at a riot by offering an officer what beverage?</p>
+    <button onclick = "incorrect()">Coke</button>
+    <button onclick = "incorrect()">Miller Lite</button>
+    <button onclick = "incorrect()">Yuengling</button>
+    <button onclick = "correct()">Pepsi</button>
+  </body>
+</html>

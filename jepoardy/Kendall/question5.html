@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kendall - 500</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -250 points.\nThe correct answer was: The Super Natural Friend Group.");
+        window.close();
+        score = score - 250;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +500 points.");
+        window.close();
+        score = score + 500;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Kendall has a very famous freindgroup which includes models such as the Hadid sisters and Cara Delevigne. What does this group call themselves?</p>
+    <button onclick = "incorrect()">The Mod Squad</button>
+    <button onclick = "incorrect()">The Polly Pockets</button>
+    <button onclick = "correct()">The Super Natural Friend Group</button>
+    <button onclick = "incorrect()">The Glam Fam</button>
+  </body>
+</html>

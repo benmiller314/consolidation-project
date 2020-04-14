@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Khloe - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: 5'10\".");
+        window.close();
+        score = score - 200;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+        score = score + 400;
+      }
+    </script>
+  </head>
+  <body>
+    <p>How tall is Khloe Kardashian?</p>
+    <button onclick = "incorrect()">5'8"</button>
+    <button onclick = "incorrect()">5'6"</button>
+    <button onclick = "correct()">5'10"</button>
+    <button onclick = "incorrect()">6'0"</button>
+  </body>
+</html>

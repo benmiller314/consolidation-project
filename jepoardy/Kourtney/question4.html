@@ -1,0 +1,27 @@
+<html lang = 'en'>
+  <head>
+    <title>Kourtney - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: $35 million.");
+        window.close();
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <p>What is Kourtney's current net worth?</p>
+    <button onclick = "correct()">$35 million</button>
+    <button onclick = "incorrect()">$18 million</button>
+    <button onclick = "incorrect()">$28 million</button>
+    <button onclick = "incorrect()">$50 million</button>
+  </body>
+</html>

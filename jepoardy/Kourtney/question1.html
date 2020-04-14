@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kourtney - 100</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -50 points.\nThe correct answer was: Mason.");
+        window.close();
+        score = score - 50;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +100 points.");
+        window.close();
+        score = score + 100;
+      }
+    </script>
+  </head>
+  <body>
+    <p>What is the first name of Kourtney's oldest child?</p>
+    <button onclick = "incorrect()">Penelope</button>
+    <button onclick = "incorrect()">Scott</button>
+    <button onclick = "correct()">Mason</button>
+    <button onclick = "incorrect()">Rob</button>
+  </body>
+</html>

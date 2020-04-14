@@ -1,51 +1,107 @@
 <!<!DOCTYPE html>
 <html lang = 'en'>
   <head>
-    <title>JEOPARDY - KUWK edition</title>
+    <title>Trivia - KUWK edition</title>
     <link rel=stylesheet href="editor.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+      function askquestion(sister, question){
+        if(sister == 1){
+          if(question == 1){
+            window.open('Kourtney/question1.html','popup','width=600, height = 600');
+            document.getElementByID("k11").disabled = true;
+          }else if(question ==2){
+            window.open('Kourtney/question2.html','popup','width=600, height=600');
+          }else if(question ==3){
+            window.open('Kourtney/question3.html','popup','width=600, height=600');
+          }else if(question ==4){
+            window.open('Kourtney/question4.html','popup','width=600, height=600');
+          }else{
+            window.open('Kourtney/question5.html','popup','width=600, height=600');
+          }
+        }else if(sister == 2){
+          if(question == 1){
+            window.open('Kim/question1.html','popup','width=600, height=600');
+          }else if(question == 2){
+            window.open('Kim/question2.html','popup','width=600, height=600');
+          }else if(question == 3){
+            window.open('Kim/question3.html','popup','width=600, height=600');
+          }else if(question == 4){
+            window.open('Kim/question4.html','popup','width=600, height=600');
+          }else{
+            window.open('Kim/question5.html','popup','width=600, height=600');
+          }
+        }else if(sister == 3){
+          if(question == 1){
+            window.open('Khloe/question1.html','popup','width=600, height=600');
+          }else if(question == 2){
+            window.open('Khloe/question2.html','popup','width=600, height=600');
+          }else if(question == 3){
+            window.open('Khloe/question3.html','popup','width=600, height=600');
+          }else if(question == 4){
+            window.open('Khloe/question4.html','popup','width=600, height=600');
+          }else{
+            window.open('Khloe/question5.html','popup','width=600, height=600');
+          }
+        }else if(sister = 4){
+          if(question == 1){
+            window.open('Kendall/question1.html','popup','width=600, height=600');
+          }else if(question == 2){
+            window.open('Kendall/question2.html','popup','width=600, height=600');
+          }else if(question == 3){
+            window.open('Kendall/question3.html','popup','width=600, height=600');
+          }else if(question == 4){
+            window.open('Kendall/question4.html','popup','width=600, height=600');
+          }else{
+            window.open('Kendall/question5.html','popup','width=600, height=600');
+          }
+        }
+      }
+      </script>
   </head>
   <body>
-    <header><p class = "title">JEOPARDY</p><p class = "subtitle">KARDASHIAN / JENNER EDITION</p></header>
+    <header><p class = "title">TRIVIA</p><p class = "subtitle">KARDASHIAN / JENNER EDITION</p></header>
+    <nav class = "points"><p class = "score">Score: <span id = "output">0<span/> </p></nav>
     <div class = "main">
-      <section class = "kourtney"></section>
-        <div class = "name"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-      <section class = "kim"></section>
-        <div class = "name"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-      <section class = "khloe"></section>
-        <div class = "name"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-      <section class = "kendall"></section>
-        <div class = "name"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-      <section class = "kylie"></section>
-        <div class = "name"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
-        <div class = "question"></div>
+      <section class = "kourtney">
+        <div class = "name">Kourtney</div>
+        <div class = "question"><button ID = "k11" onclick="askquestion(1, 1)">100</button></div>
+        <div class = "question"><button ID = "k12" onclick="askquestion(1, 2)">200</button></div>
+        <div class = "question"><button ID = "k13" onclick="askquestion(1, 3)">300</button></div>
+        <div class = "question"><button ID = "k14" onclick="askquestion(1, 4)">400</button></div>
+        <div class = "question"><button ID = "k15" onclick="askquestion(1, 5)">500</button></div>
+      </section>
+      <section class = "kim">
+        <div class = "name">Kim</div>
+        <div class = "question"><button ID = "k21" onclick="askquestion(2, 1)">100</button></div>
+        <div class = "question"><button ID = "k22" onclick="askquestion(2, 2)">200</button></div>
+        <div class = "question"><button ID = "k23" onclick="askquestion(2, 3)">300</button></div>
+        <div class = "question"><button ID = "k24" onclick="askquestion(2, 4)">400</button></div>
+        <div class = "question"><button ID = "k25" onclick="askquestion(2, 5)">500</button></div>
+      </section>
+      <section class = "khloe">
+        <div class = "name">Khloe</div>
+        <div class = "question"><button ID = "k31" onclick="askquestion(3, 1)">100</button></div>
+        <div class = "question"><button ID = "k32" onclick="askquestion(3, 2)">200</button></div>
+        <div class = "question"><button ID = "k33" onclick="askquestion(3, 3)">300</button></div>
+        <div class = "question"><button ID = "k34" onclick="askquestion(3, 4)">400</button></div>
+        <div class = "question"><button ID = "k35" onclick="askquestion(3, 5)">500</button></div>
+      </section>
+      <section class = "kendall">
+        <div class = "name">Kendall</div>
+        <div class = "question"><button ID = "k41" onclick="askquestion(4, 1)">100</button></div>
+        <div class = "question"><button ID = "k42" onclick="askquestion(4, 2)">200</button></div>
+        <div class = "question"><button ID = "k43" onclick="askquestion(4, 3)">300</button></div>
+        <div class = "question"><button ID = "k44" onclick="askquestion(4, 4)">400</button></div>
+        <div class = "question"><button ID = "k45" onclick="askquestion(4, 5)">500</button></div>
+      </section>
+      <section class = "kylie">
+        <div class = "name">Kylie</div>
+        <div class = "question"><button>100</button></div>
+        <div class = "question"><button>200</button></div>
+        <div class = "question"><button>300</button></div>
+        <div class = "question"><button>400</button></div>
+        <div class = "question"><button>500</button></div>
+      </section>
   </body>
 </html>

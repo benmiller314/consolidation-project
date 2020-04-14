@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Khloe - 200</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -100 points.\nThe correct answer was: O.J. Simpson.");
+        window.close();
+        score = score - 100;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +200 points.");
+        window.close();
+        score = score + 200;
+      }
+    </script>
+  </head>
+  <body>
+    <p>For years rumors circulated that which person is actually Khloe's father?</p>
+    <button onclick = "incorrect()">Johnnie Cochran</button>
+    <button onclick = "incorrect()">Corey Gamble</button>
+    <button onclick = "correct()">O.J. Simpson</button>
+    <button onclick = "incorrect()">Caitlyn Jenner</button>
+  </body>
+</html>

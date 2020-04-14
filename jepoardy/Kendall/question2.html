@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kendall - 200</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -100 points.\nThe correct answer was: Tristan Thompson.");
+        window.close();
+        score = score - 100;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +200 points.");
+        window.close();
+        score = score + 200;
+      }
+    </script>
+  </head>
+  <body>
+    <p>How old was Kendall Jenner when Keeping Up with the Kardashians first premiered?</p>
+    <button onclick = "incorrect()">15</button>
+    <button onclick = "correct()">11</button>
+    <button onclick = "incorrect()">13</button>
+    <button onclick = "incorrect()">10</button>
+  </body>
+</html>

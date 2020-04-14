@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Khloe - 300</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -150 points.\nThe correct answer was: Revenge Body with Khloe Kardashian.");
+        window.close();
+        score = score - 150;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +300 points.");
+        window.close();
+        score = score + 300;
+      }
+    </script>
+  </head>
+  <body>
+    <p>What is the name of Khloe's reality show that started in 2017?</p>
+    <button onclick = "correct()">Revenge Body with Khloe Kardashian</button>
+    <button onclick = "incorrect()">Khloe Kardashian's Revenge Body</button>
+    <button onclick = "incorrect()">Transform Your Life with Khloe Kardashian</button>
+    <button onclick = "incorrect()">Transform Your Body with Khloe Kardashian</button>
+  </body>
+</html>

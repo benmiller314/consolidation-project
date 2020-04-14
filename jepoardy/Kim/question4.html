@@ -1,0 +1,29 @@
+<html lang = 'en'>
+  <head>
+    <title>Kim - 400</title>
+    <link rel="stylesheet" href="../buttoneditor.css"/>
+
+    <script type="text/javascript">
+      function incorrect()
+      {
+        window.alert("Incorrect. -200 points.\nThe correct answer was: KIMONO.");
+        window.close();
+        score = score - 200;
+      }
+
+      function correct()
+      {
+        window.alert("Correct! +400 points.");
+        window.close();
+        score = score + 400;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Kim's shapewear brand, SKIMS, was orignally called what?</p>
+    <button onclick = "correct()">KIMONO</button>
+    <button onclick = "incorrect()">KKW Shapewear</button>
+    <button onclick = "incorrect()">SKIM</button>
+    <button onclick = "incorrect()">Shaped by Kim</button>
+  </body>
+</html>
