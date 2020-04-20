@@ -7,8 +7,10 @@
       function incorrect()
       {
         window.alert("Incorrect. -50 points.\nThe correct answer was: Mason.");
-        window.close();
+        /*score = JSON.parse(window.localStorage.getItem('points'));
         score = score - 50;
+        window.localStorage.setItem('points', score);*/
+        window.close();
       }
 
       function correct()

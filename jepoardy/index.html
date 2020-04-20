@@ -6,74 +6,102 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript">
       function askquestion(sister, question){
+        /*var points = document.getElementById('output').value;
+        window.localStorage.setItem('points', points);*/
         if(sister == 1){
           if(question == 1){
             window.open('Kourtney/question1.html','popup','width=600, height = 600');
-            document.getElementByID("k11").disabled = true;
+            document.getElementById("k11").disabled = true;
           }else if(question ==2){
             window.open('Kourtney/question2.html','popup','width=600, height=600');
+            document.getElementById("k12").disabled = true;
           }else if(question ==3){
             window.open('Kourtney/question3.html','popup','width=600, height=600');
+            document.getElementById("k13").disabled = true;
           }else if(question ==4){
             window.open('Kourtney/question4.html','popup','width=600, height=600');
+            document.getElementById("k14").disabled = true;
           }else{
             window.open('Kourtney/question5.html','popup','width=600, height=600');
+            document.getElementById("k15").disabled = true;
           }
         }else if(sister == 2){
           if(question == 1){
             window.open('Kim/question1.html','popup','width=600, height=600');
+            document.getElementById("k21").disabled = true;
           }else if(question == 2){
             window.open('Kim/question2.html','popup','width=600, height=600');
+            document.getElementById("k22").disabled = true;
           }else if(question == 3){
             window.open('Kim/question3.html','popup','width=600, height=600');
+            document.getElementById("k23").disabled = true;
           }else if(question == 4){
             window.open('Kim/question4.html','popup','width=600, height=600');
+            document.getElementById("k24").disabled = true;
           }else{
             window.open('Kim/question5.html','popup','width=600, height=600');
+            document.getElementById("25").disabled = true;
           }
         }else if(sister == 3){
           if(question == 1){
             window.open('Khloe/question1.html','popup','width=600, height=600');
+            document.getElementById("k31").disabled = true;
           }else if(question == 2){
             window.open('Khloe/question2.html','popup','width=600, height=600');
+            document.getElementById("k32").disabled = true;
           }else if(question == 3){
             window.open('Khloe/question3.html','popup','width=600, height=600');
+            document.getElementById("k33").disabled = true;
           }else if(question == 4){
             window.open('Khloe/question4.html','popup','width=600, height=600');
+            document.getElementById("k34").disabled = true;
           }else{
             window.open('Khloe/question5.html','popup','width=600, height=600');
+            document.getElementById("k35").disabled = true;
           }
         }else if(sister == 4){
           if(question == 1){
             window.open('Kendall/question1.html','popup','width=600, height=600');
+            document.getElementById("k41").disabled = true;
           }else if(question == 2){
             window.open('Kendall/question2.html','popup','width=600, height=600');
+            document.getElementById("k42").disabled = true;
           }else if(question == 3){
             window.open('Kendall/question3.html','popup','width=600, height=600');
+            document.getElementById("k43").disabled = true;
           }else if(question == 4){
             window.open('Kendall/question4.html','popup','width=600, height=600');
+            document.getElementById("k44").disabled = true;
           }else{
             window.open('Kendall/question5.html','popup','width=600, height=600');
+            document.getElementById("k45").disabled = true;
           }
         }else if(sister == 5){
           if(question == 1){
             window.open('Kylie/question1.html','popup','width=600, height=600');
+            document.getElementById("k51").disabled = true;
           }else if(question == 2){
             window.open('Kylie/question2.html','popup','width=600, height=600');
+            document.getElementById("k52").disabled = true;
           }else if(question == 3){
             window.open('Kylie/question3.html','popup','width=600, height=600');
+            document.getElementById("k53").disabled = true;
           }else if(question == 4){
             window.open('Kylie/question4.html','popup','width=600, height=600');
+            document.getElementById("k54").disabled = true;
           }else{
             window.open('Kylie/question5.html','popup','width=600, height=600');
+            document.getElementById("k55").disabled = true;
           }
         }
+        /*points = JSON.parse(window.localStorage.getItem('points'));
+        document.getElementByID("output").innerHTML = points;*/
       }
       </script>
   </head>
   <body>
     <header><p class = "title">TRIVIA</p><p class = "subtitle">KARDASHIAN / JENNER EDITION</p></header>
-    <nav class = "points"><p class = "score">Score: <span id = "output">0<span/> </p></nav>
+    <nav class = "points"><p>Split into 2 teams and keep track of your scores!</p></nav>
     <div class = "main">
       <section class = "kourtney">
         <div class = "name">Kourtney</div>
